@@ -1,4 +1,4 @@
-[{
+{
 	"name": "Broadband CFS",
 	"type": "CFS",
 	"children": [{
@@ -80,4 +80,3 @@
 
 	]
 }
-]
