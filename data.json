@@ -1,48 +1,82 @@
-{
-  "name": "Broadband",
-  "type": "CFS",
-  "children": [{
-      "name": "DSL",
-      "type": "RFS",
-      "children": [{
-          "name": "DSLAM",
-          "type": "Resource"
-        },
-        {
-          "name": "ADSL Port",
-          "type": "Resource"
-        }
-      ]
-    },
-    {
-      "name": "Docsis",
-      "type": "RFS",
-      "children": [{
-          "name": "Docsis Modem",
-          "type": "Resource"
-        },
-        {
-          "name": "Docsis Port",
-          "type": "Resource"
-        }
-      ]
-    },
-    {
-      "name": "Fiber",
-      "type": "RFS",
-      "children": [{
-          "name": "OLT",
-          "type": "Resource"
-        },
-        {
-          "name": "GPON Port",
-          "type": "Resource"
-        },
-        {
-          "name": "ONU",
-          "type": "Resource"
-        }
-      ]
-    }
-  ]
-}
+treeData = [{
+	"name": "Broadband CFS",
+	"type": "CFS",
+	"children": [{
+			"name": "Service Actions",
+			"children": [{
+					"name": "Add",
+					"type": "SA"
+				},
+				{
+					"name": "Delete",
+					"type": "SA"
+				}
+			]
+		},
+		{
+			"name": "RFSes",
+			"children": [{
+					"name": "DSL RFS",
+					"type": "RFS",
+					"children": [{
+							"name": "DSLAM",
+							"type": "Resource"
+						},
+						{
+							"name": "ADSL Port",
+							"type": "Resource",
+							"children": [{
+								"name": "Technical Actions",
+								"children": [{
+										"name": "Create",
+										"type": "TA"
+									},
+									{
+										"name": "Delete",
+										"type": "TA"
+									},
+									{
+										"name": "Modify",
+										"type": "TA"
+									}
+								]
+							}]
+
+						}
+					]
+				},
+				{
+					"name": "Docsis RFS",
+					"type": "RFS",
+					"children": [{
+							"name": "Docsis Modem",
+							"type": "Resource"
+						},
+						{
+							"name": "Docsis Port",
+							"type": "Resource"
+						}
+					]
+				},
+				{
+					"name": "Fiber RFS",
+					"type": "RFS",
+					"children": [{
+							"name": "OLT",
+							"type": "Resource"
+						},
+						{
+							"name": "GPON Port",
+							"type": "Resource"
+						},
+						{
+							"name": "ONU",
+							"type": "Resource"
+						}
+					]
+				}
+			]
+		}
+
+	]
+}]
