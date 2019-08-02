@@ -1,4 +1,4 @@
-treeData = [{
+{
 	"name": "Broadband CFS",
 	"type": "CFS",
 	"children": [{
@@ -79,4 +79,4 @@ treeData = [{
 		}
 
 	]
-}]
+}
