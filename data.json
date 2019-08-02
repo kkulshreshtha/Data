@@ -1,0 +1,47 @@
+{
+  "name": "Broadband",
+	"type": "CFS",
+  "children": [{
+    "name": "DSL",
+		"type": "RFS",
+    "children": [{
+        "name": "DSLAM",
+				"type": "Resource"
+      },
+			{
+        "name": "ADSL Port",
+				"type": "Resource"
+      }
+    ]
+  },
+	{
+    "name": "Docsis",
+		"type": "RFS",
+    "children": [{
+        "name": "Docsis Modem",
+				"type": "Resource"
+      },
+			{
+        "name": "Docsis Port",
+				"type": "Resource"
+      }
+    ]
+  },
+	{
+    "name": "Fiber",
+		"type": "RFS",
+    "children": [{
+        "name": "OLT",
+				"type": "Resource"
+      },
+			{
+        "name": "GPON Port",
+				"type": "Resource"
+      },
+			{
+        "name": "ONU",
+				"type": "Resource"
+      },
+    ]
+  }]
+}
